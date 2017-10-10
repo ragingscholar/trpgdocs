@@ -1,0 +1,62 @@
+# Base configuration
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+markdown: kramdown
+highlighter: rouge
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Title
+name: 长毛象跑团机器人说明文档
+subtitle: 长毛象跑团机器人说明文档
+
+# When using this template with a project page set the baseurl to '/project-name'
+# For user/organization pages set this to an empty string
+# When working locally use jekyll serve --baseurl '' so that you can view everything at localhost:4000
+# See http://jekyllrb.com/docs/github-pages/ for more info
+#baseurl: ''
+baseurl: '/DOCter'
+
+# Author/Organization info to be displayed in the templates
+author:
+  name: 海格尼尼
+  url: https://cmx.im/@haisenberg
+
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+logourl:
+logoalt:
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: 主页
+  url: ./
+  internal: true
+- text: 什么是长毛象
+  url: mastodon/
+  internal: true
+- text: 骰子君文档
+  url: dicebot/
+  internal: true
+- text: 跑团君文档
+  url: trpgbot/
+  internal: true
+#- text: DOCter Repo
+#  url: https://github.com/cfpb/DOCter
+#  internal: false
+
+# Repo list
+# List repos that you would like to appear on the homepage here
+# repos:
+# - name: DOCter
+#   description: Jekyll template for docs
+#   url: https://github.com/cfpb/DOCter
+
+# Style Variables
+brand_color: "#2cb34a"
+
+# Offline caching
+offline_cache: false
+cache_name: DOCter-v1.1
